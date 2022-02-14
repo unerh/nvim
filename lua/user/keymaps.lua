@@ -41,7 +41,7 @@ keymap("n", "<A-i>", "<Esc>:m .-2<CR>==gi<ESC>", opts)
 
 -- Insert --
 -- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+keymap("i", "hh", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
