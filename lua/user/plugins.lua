@@ -56,6 +56,7 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
 
+  use {"ellisonleao/glow.nvim", config = 'vim.g.glow_width = 125'}
 
   -- cmp plugins
   use 'hrsh7th/nvim-cmp' -- The completion plugin
@@ -89,6 +90,7 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
   use "sindrets/diffview.nvim"
+
   -- Sessions
   use {
    'rmagatti/auto-session',
