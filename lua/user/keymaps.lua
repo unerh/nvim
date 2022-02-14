@@ -83,3 +83,6 @@ keymap("n", "<leader>se", ":%s///gc<Left><Left><Left>", opts)
 keymap("v", "se", "y:%s/<C-R>\"/<C-r>\"/gc<Left><Left><Left>", opts)
 
 keymap("n", "<leader>x", ":qa!<cr>", opts)
+
+keymap("n", "<C-f>", "<C-e>", opts)
+keymap("n", "<C-b>", "<C-y>", opts)
