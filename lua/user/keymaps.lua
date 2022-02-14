@@ -77,3 +77,7 @@ keymap("n", "<leader>sf", "<cmd>lua require('telescope.builtin').find_files()<cr
 keymap("n", "<leader>st", "<cmd>lua require('telescope.builtin').live_grep()<cr>", opts)
 keymap("n", "<leader>sb", "<cmd>lua require('telescope.builtin').buffers()<cr>", opts)
 keymap("n", "<leader>sg", "<cmd>lua require('telescope.builtin').grep_string()<cr>", opts)
+
+keymap("n", "<leader>ss", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", opts)
+keymap("n", "<leader>se", ":%s///gc<Left><Left><Left>", opts)
+keymap("v", "se", "y:%s/<C-R>\"/<C-r>\"/gc<Left><Left><Left>", opts)
