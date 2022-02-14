@@ -81,3 +81,5 @@ keymap("n", "<leader>sg", "<cmd>lua require('telescope.builtin').grep_string()<c
 keymap("n", "<leader>ss", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", opts)
 keymap("n", "<leader>se", ":%s///gc<Left><Left><Left>", opts)
 keymap("v", "se", "y:%s/<C-R>\"/<C-r>\"/gc<Left><Left><Left>", opts)
+
+keymap("n", "<leader>x", ":qa!<cr>", opts)
