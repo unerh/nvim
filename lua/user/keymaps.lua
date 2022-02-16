@@ -24,6 +24,7 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<C-q>", "<C-w>q", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -81,8 +82,6 @@ keymap("n", "<leader>sg", "<cmd>lua require('telescope.builtin').grep_string()<c
 keymap("n", "<leader>ss", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", opts)
 keymap("n", "<leader>se", ":%s///gc<Left><Left><Left>", opts)
 keymap("v", "se", "y:%s/<C-R>\"/<C-r>\"/gc<Left><Left><Left>", opts)
-
-keymap("n", "<leader>x", ":qa!<cr>", opts)
 
 keymap("n", "<C-f>", "<C-e>", opts)
 keymap("n", "<C-b>", "<C-y>", opts)
