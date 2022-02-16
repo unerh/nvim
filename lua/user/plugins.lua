@@ -36,11 +36,6 @@ packer.init({
 return packer.startup(function(use)
 
   -- My plugins here
-  use 'wbthomason/packer.nvim' -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
   use "rebelot/kanagawa.nvim"
   use "lunarvim/darkplus.nvim"
   use "ellisonleao/gruvbox.nvim"
@@ -63,7 +58,8 @@ return packer.startup(function(use)
   use 'goolord/alpha-nvim'
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-  use "justinmk/vim-sneak"
+  -- use "justinmk/vim-sneak"
+  use "ggandor/lightspeed.nvim"
 
   use {"ellisonleao/glow.nvim", config = 'vim.g.glow_width = 125'}
 
