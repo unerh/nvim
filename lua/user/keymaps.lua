@@ -85,3 +85,4 @@ keymap("v", "se", "y:%s/<C-R>\"/<C-r>\"/gc<Left><Left><Left>", opts)
 
 keymap("n", "<C-f>", "<C-e>", opts)
 keymap("n", "<C-b>", "<C-y>", opts)
+keymap("n", "<F12>", [[<Cmd>TZAtaraxis<CR>]], opts)
