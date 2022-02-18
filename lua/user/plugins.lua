@@ -64,6 +64,9 @@ return packer.startup(function(use)
   use {"ellisonleao/glow.nvim", config = 'vim.g.glow_width = 125'}
   use "Pocco81/TrueZen.nvim"
 
+  -- notes & tasks
+  use "renerocksai/telekasten.nvim"
+
   -- cmp plugins
   use 'hrsh7th/nvim-cmp' -- The completion plugin
   use 'hrsh7th/cmp-buffer' -- buffer completions
