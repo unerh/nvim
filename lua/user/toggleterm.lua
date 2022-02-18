@@ -5,7 +5,7 @@ end
 
 toggleterm.setup({
 	size = 20,
-	open_mapping = [[<c-\>]],
+	open_mapping = [[<c-t>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,
@@ -28,7 +28,13 @@ toggleterm.setup({
 
 local Terminal = require("toggleterm.terminal").Terminal
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+local glow = Terminal:new({ cmd = "glow", hidden = true })
 
 function _LAZYGIT_TOGGLE()
 	lazygit:toggle()
 end
+
+function _GLOW_TOGGLE()
+	glow:toggle()
+end
+
