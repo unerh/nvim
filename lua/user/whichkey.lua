@@ -94,6 +94,7 @@ local mappings = {
   ["/"] = { "<cmd>lua require('Comment.api').call('toggle_current_linewise_op')<cr>g@$", "Comment"},
   ["C"] = { "<cmd>lua require('Comment.api').call('toggle_linewise_op')<cr>g@", "Comments"},
   ["m"] = { "<cmd>Glow<CR>", "Glow" },
+  ["R"] = { "<cmd>bufdo! e<CR>", "Refresh Buffers" },
 
   f = {
     name = "Find",
@@ -178,7 +179,6 @@ local mappings = {
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
     q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
     r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-    s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     s = { "<cmd>SymbolsOutline<cr>", "Document Symbols" },
     S = {
       "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
