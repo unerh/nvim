@@ -207,6 +207,25 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+
+  z = {
+    name = "Zettels",
+    f = { "<cmd>Telekasten find_notes<CR>", "Find Notes" },
+    d = { "<cmd>Telekasten find_daily_notes<CR>", "Daily Notes" },
+    g = { "<cmd>Telekasten search_notes<CR>", "Search Notes" },
+    z = { "<cmd>Telekasten follow_link<CR>", "Follow Link" },
+    T = { "<cmd>Telekasten goto_today<CR>", "Goto Today" },
+    W = { "<cmd>Telekasten goto_thisweek<CR>", "Goto Week" },
+    w = { "<cmd>Telekasten find_weekly_notes<CR>", "Weekly Notes" },
+    n = { "<cmd>Telekasten new_note<CR>", "New Note" },
+    N = { "<cmd>Telekasten new_templated_note<CR>", "Templated Note" },
+    y = { "<cmd>Telekasten yank_notelink<CR>", "Yank Link" },
+    t = { "<cmd>Telekasten toggle_todo<CR>", "Toggle Todo" },
+    b = { "<cmd>Telekasten show_backlinks<CR>", "Show Backlinks" },
+    F = { "<cmd>Telekasten find_friends<CR>", "Find Friends" },
+    a = { "<cmd>Telekasten show_tags<CR>", "Show Tags" },
+    r = { "<cmd>Telekasten rename_note<CR>", "Rename Note" },
+  },
 }
 
 which_key.setup(setup)
