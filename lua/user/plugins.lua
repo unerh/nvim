@@ -39,6 +39,9 @@ return packer.startup(function(use)
   use "rebelot/kanagawa.nvim"
   use "lunarvim/darkplus.nvim"
   use "ellisonleao/gruvbox.nvim"
+  use "gruvbox-community/gruvbox"
+  use 'luisiacc/gruvbox-baby'
+  use 'sainnhe/gruvbox-material'
   use 'folke/tokyonight.nvim'
   use 'Mofiqul/dracula.nvim'
   use 'wbthomason/packer.nvim' -- Have packer manage itself
