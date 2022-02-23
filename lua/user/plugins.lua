@@ -63,6 +63,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   -- use "justinmk/vim-sneak"
   use "ggandor/lightspeed.nvim"
+  use "tpope/vim-surround"
 
   use {"ellisonleao/glow.nvim", config = 'vim.g.glow_width = 125'}
   use "Pocco81/TrueZen.nvim"
