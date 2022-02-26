@@ -64,6 +64,9 @@ return packer.startup(function(use)
   -- use "justinmk/vim-sneak"
   use "ggandor/lightspeed.nvim"
   use "tpope/vim-surround"
+  use "tpope/vim-repeat"
+  use "kana/vim-textobj-line"
+  use "kana/vim-textobj-user"
 
   use {"ellisonleao/glow.nvim", config = 'vim.g.glow_width = 125'}
   use "Pocco81/TrueZen.nvim"
