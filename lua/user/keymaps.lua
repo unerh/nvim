@@ -87,3 +87,7 @@ keymap("n", "<C-f>", "<C-e>", opts)
 keymap("n", "<C-b>", "<C-y>", opts)
 keymap("n", "<F12>", [[<Cmd>TZAtaraxis<CR>]], opts)
 keymap("n", "<F3>", ":set cursorcolumn! cursorline!<CR>", opts)
+
+keymap("n", "<F2>", '<C-r>=strftime("%FT%T%z")<CR>', opts)
+keymap("c", "<F2>", '<C-r>=strftime("%FT%T%z")<CR>', opts)
+
