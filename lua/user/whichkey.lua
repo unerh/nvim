@@ -156,9 +156,13 @@ local mappings = {
 
   l = {
     name = "LSP",
-    a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+    a = {
+      -- "<cmd>lua vim.lsp.buf.code_action()<cr>",
+      "<cmd>lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_dropdown{})<cr>",
+      "Code Action",
+    },
     d = {
-      "<cmd>Telescope lsp_document_diagnostics<cr>",
+      "<cmd>Telescope diagnostics<cr>",
       "Document Diagnostics",
     },
     w = {
@@ -169,11 +173,11 @@ local mappings = {
     i = { "<cmd>LspInfo<cr>", "Info" },
     I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
     j = {
-      "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
+      "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>zz",
       "Next Diagnostic",
     },
     k = {
-      "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",
+      "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>zz",
       "Prev Diagnostic",
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
