@@ -73,6 +73,11 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("c", "<C-j>", 'pumvisible() ? "\\<C-n>" : "\\<C-j>"', { expr = true, noremap = true })
 keymap("c", "<C-k>", 'pumvisible() ? "\\<C-p>" : "\\<C-k>"', { expr = true, noremap = true })
 
+-- quickfix navigation
+keymap("n", "<leader>n", ':lnext <cr>zz<cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ border = "rounded" })<CR>', opts)
+keymap("n", "<leader>k", ':cnext <cr>zz', opts)
+keymap("n", "<leader>j", ':cprev <cr>zz', opts)
+
 -- Telescope
 keymap("n", "<leader>sf", "<cmd>lua require('telescope.builtin').find_files()<cr>", opts)
 keymap("n", "<leader>st", "<cmd>lua require('telescope.builtin').live_grep()<cr>", opts)
@@ -81,7 +86,7 @@ keymap("n", "<leader>sg", "<cmd>lua require('telescope.builtin').grep_string()<c
 
 keymap("n", "<leader>ss", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", opts)
 keymap("n", "<leader>se", ":%s///gc<Left><Left><Left>", opts)
-keymap("v", "se", "y:%s/<C-R>\"/<C-r>\"/gc<Left><Left><Left>", opts)
+keymap("v", "se", 'y:%s/<C-R>"/<C-r>"/gc<Left><Left><Left>', opts)
 
 keymap("n", "<C-f>", "<C-e>", opts)
 keymap("n", "<C-b>", "<C-y>", opts)
