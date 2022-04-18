@@ -56,14 +56,14 @@ cmp.setup({
 		-- ["<C-r>"] = cmp.mapping(cmp.mapping.scroll_docs(-5), { "i", "c" }),
 		-- ["<C-e>"] = cmp.mapping(cmp.mapping.scroll_docs(5), { "i", "c" }),
 		["<C-n>"] = cmp.mapping({
-      i = function()
-        if cmp.visible() then
-          cmp.abort()
-        else
-          cmp.complete()
-        end
-      end,
-    }),
+			i = function()
+				if cmp.visible() then
+					cmp.abort()
+				else
+					cmp.complete()
+				end
+			end,
+		}),
 		["<C-y>"] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
 		-- Accept currently selected item. If none selected, `select` first item.
 		-- Set `select` to `false` to only confirm explicitly selected items.
@@ -122,12 +122,13 @@ cmp.setup({
 		behavior = cmp.ConfirmBehavior.Replace,
 		select = false,
 	},
-	documentation = {
-		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+	window = {
+		documentation = {
+			border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+		},
 	},
 	experimental = {
 		ghost_text = false,
 		native_menu = false,
 	},
 })
-
