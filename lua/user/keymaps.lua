@@ -78,6 +78,9 @@ keymap("n", "<leader>n", ':lnext <cr>zz<cmd>lua vim.lsp.diagnostic.show_line_dia
 keymap("n", "<leader>k", ':cnext <cr>zz', opts)
 keymap("n", "<leader>j", ':cprev <cr>zz', opts)
 
+keymap("n", "<leader>+", '<C-w>l50<C-w>>', opts)
+keymap("n", "<leader>=", '<C-w>=', opts)
+
 -- Telescope
 keymap("n", "<leader>sf", "<cmd>lua require('telescope.builtin').find_files()<cr>", opts)
 keymap("n", "<leader>st", "<cmd>lua require('telescope.builtin').live_grep()<cr>", opts)
