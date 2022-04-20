@@ -127,8 +127,16 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 	use("simrat39/symbols-outline.nvim")
 	use("neomake/neomake")
-	-- use { 'ms-jpq/coq_nvim', branch = 'coq' }
-	-- use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+	use({
+		"ms-jpq/coq_nvim",
+		branch = "coq",
+		config = function()
+			vim.g.coq_settings = {
+				auto_start = true,
+			}
+		end,
+	})
+	use({ "ms-jpq/coq.artifacts", branch = "artifacts" })
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
