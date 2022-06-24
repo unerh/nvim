@@ -159,8 +159,7 @@ local mappings = {
   l = {
     name = "LSP",
     a = {
-      -- "<cmd>lua vim.lsp.buf.code_action()<cr>",
-      "<cmd>lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_dropdown{})<cr>",
+      "<cmd>lua vim.lsp.buf.code_action()<cr>",
       "Code Action",
     },
     d = {
