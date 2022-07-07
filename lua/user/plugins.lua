@@ -141,7 +141,9 @@ return packer.startup(function(use)
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-fzy-native.nvim")
-	use("nvim-telescope/telescope-ui-select.nvim")
+	-- use("nvim-telescope/telescope-ui-select.nvim")
+
+	use({ "stevearc/dressing.nvim" })
 
 	-- Treesitter
 	use({

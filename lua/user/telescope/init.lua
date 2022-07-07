@@ -98,12 +98,12 @@ telescope.setup({
 		--   extension_config_key = value,
 		-- }
 		-- please take a look at the readme of the extension you want to configure
-		["ui-select"] = {
-			require("telescope.themes").get_dropdown({
-				-- even more opts
-			}),
-		},
+		-- ["ui-select"] = {
+		-- 	require("telescope.themes").get_dropdown({
+		-- 		-- even more opts
+		-- 	}),
+		-- },
 	},
 })
 
-require("telescope").load_extension("ui-select")
+-- require("telescope").load_extension("ui-select")
